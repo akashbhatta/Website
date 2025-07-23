@@ -9,6 +9,7 @@ import Users from '../Pages/Users'
 import UserList from '../Pages/UserList'
 import UserDetail from '../Pages/UserDetail'
 import WeatherApp from '../Components/WeatherApp'
+import TypingTest from '@/Components/TypingTest'
 
 const AppRouter = () => {
   return (
@@ -19,11 +20,13 @@ const AppRouter = () => {
     <Route path = "/aboutMe" element = {<About/>}/>
      <Route path = "/contact" element = {<Contact/>}/>
        <Route path = "/projects" element = {<Project/>}/>
+
       
 
        <Route path ="/users" element={<Users/>}>
           <Route index element = {<UserList/>}/>
             <Route index element = {<WeatherApp/>}/>
+            <Route index element = {<TypingTest/>}/>
           <Route path = ":id" element = {<UserDetail/>}/>
          
          </Route>
