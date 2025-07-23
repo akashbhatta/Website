@@ -4,12 +4,13 @@ import About from '../Pages/About'
 import Contact from '../Pages/Contact'
 import Project from '../Pages/Project'
 import Home from '../Pages/Home'
-import User from '../Pages/UserDetail'
+// import User from '../Pages/UserDetail'
 import Users from '../Pages/Users'
 import UserList from '../Pages/UserList'
 import UserDetail from '../Pages/UserDetail'
 import WeatherApp from '../Components/WeatherApp'
 import TypingTest from '@/Components/TypingTest'
+import NewsList from '@/Components/NewsList'
 
 const AppRouter = () => {
   return (
@@ -26,6 +27,7 @@ const AppRouter = () => {
        <Route path ="/users" element={<Users/>}>
           <Route index element = {<UserList/>}/>
             <Route index element = {<WeatherApp/>}/>
+            <Route index element = {<NewsList/>}/>
             <Route index element = {<TypingTest/>}/>
           <Route path = ":id" element = {<UserDetail/>}/>
          

@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar'
 import Contact from './Contact'
 import { Link, Outlet } from 'react-router-dom'
 import WeatherApp from '../Components/WeatherApp'
+import News from '../Components/NewsList'
 import Portfolio4 from '@/Components/Hero'
 import TypingTest from '@/Components/TypingTest'
 
@@ -15,6 +16,7 @@ const Home = () => {
     View Users
     </Link>
     <WeatherApp/>
+    <News/>
      <TypingTest/>
     <Outlet/>
 
